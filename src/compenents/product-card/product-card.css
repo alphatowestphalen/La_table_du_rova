@@ -1,0 +1,48 @@
+.single__product {
+  background: #141124;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  animation: animate .6s ease-in;
+}
+
+.single__product:hover {
+  box-shadow: 7px 7px 15px -5px #000000;
+  background: #191629;
+}
+
+.product__content {
+  padding: 0px 20px;
+  padding-bottom: 15px;
+}
+.product__content h6 {
+  color: #f5b70a;
+  text-align: center;
+}
+
+.rating span i {
+  color: #f76e11;
+}
+.rating {
+  margin-bottom: 10px;
+}
+
+.price {
+  color: white;
+}
+
+.price span {
+  color: #f5b70a;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+
+@keyframes animate{
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale();
+  }
+}

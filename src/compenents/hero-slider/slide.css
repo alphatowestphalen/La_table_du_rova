@@ -1,0 +1,21 @@
+.btn {
+  padding: 7px 25px;
+  border-radius: 5px;
+  background: #f76e11;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  color: #f76e11;
+}
+
+.back {
+  background-image: linear-gradient(#0a071a91, #0a071a7c),
+    url(../../assets/images/background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
