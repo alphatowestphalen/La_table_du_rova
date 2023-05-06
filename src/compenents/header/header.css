@@ -1,12 +1,16 @@
 .header {
   width: 100%;
-  height: 60px;
-  line-height: 80px;
+  height: 75px;
+  line-height: 75px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9;
-  background: #06050c;
+  background: #0e213146;
+  transition: 0.4s;
+}
+.header.active {
+  background: #181d20;
 }
 
 .navigation {
@@ -27,14 +31,17 @@
   column-gap: 2.7rem;
 }
 
-.nav__item a {
+.nav__item button {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
   transition: 0.3s;
+  background: none;
+  border: none;
+  gap: 20px;
 }
 
-.nav__item a:hover {
+.nav__item button:hover {
   color: #f5b70a;
 }
 
@@ -101,5 +108,3 @@
     display: block;
   }
 }
-
-

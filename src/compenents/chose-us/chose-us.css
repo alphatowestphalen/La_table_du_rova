@@ -8,9 +8,7 @@
   justify-content: center;
   margin-bottom: 10px;
 }
-.reoaby {
-  margin-left: 1%;
-}
+
 .gauche {
   width: 300%;
 }
@@ -73,5 +71,4 @@
   .single__feature p {
     font-size: 0.6rem;
   }
-  
 }

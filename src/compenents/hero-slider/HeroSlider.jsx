@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "reactstrap";
 import Slider from "react-slick";
 
@@ -6,6 +6,8 @@ import { sliderData } from "../../assets/fake-data/slider";
 import "./slide.css";
 
 const HeroSlider = () => {
+  const [currentstate, setcurrentstate] = useState(0);
+
   const settings = {
     infinite: true,
     speed: 500,
@@ -16,9 +18,9 @@ const HeroSlider = () => {
   };
 
   return (
-    <section className="back">
+    <section>
       <Container>
-        <Slider {...settings}>
+        <Slider className="back" {...settings}>
           {sliderData.map((item) => (
             <div key={item.id}>
               <div className="slider__wrapper d-flex align-items-center justify-content-between pt-5">
