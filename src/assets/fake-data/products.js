@@ -1,8 +1,8 @@
 // ======= imported  all products images from images folder ========
-import pizzaImg01 from "../images/pizza1.png";
+import pizzaImg01 from "../images/leo.png";
 
-import fastFood03 from "../images/chicken3.png";
-import fastFood04 from "../images/chicken4.png";
+import fastFood03 from "../images/nana.png";
+import fastFood04 from "../images/flo.png";
 
 import dessert02 from "../images/dessert02.png";
 import dessert03 from "../images/dessert2.png";
@@ -24,13 +24,6 @@ export const popularMenuFood = [
     title: "FLORENTIN ",
     role: "Chef cuisinier",
     imgUrl: fastFood04,
-  },
-
-  {
-    id: "03",
-    title: "JOSEPH",
-    role: "Maitre d'hôtel",
-    imgUrl: dessert02,
   },
 
   {

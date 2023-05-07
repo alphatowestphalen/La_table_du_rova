@@ -16,14 +16,8 @@ const Header = () => {
   const [navbar, setNav] = useState(false);
 
   const menuToggle = () => menuRef.current.classList.toggle("active__menu");
-
-  const scrollHandler = (ref) => {
-    console.log(ref);
-    window.scrollTo({ top: ref.current.offsetTop, behavior: "smooth" });
-  };
-
   const headcolorchange = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 60) {
       setNav(true);
     } else {
       setNav(false);
@@ -49,13 +43,11 @@ const Header = () => {
       <header className={navbar ? "header active" : "header"}>
         <Container>
           <div className="navigation">
-            <div className="logo">
-              <h2 className="d-flex align-items-center gap-1" id="typewriter">
-                <span>
-                  <i class="ri-restaurant-2-line"></i>
-                </span>{" "}
-                LA TABLE DU ROVA
-              </h2>
+            <div className="logo d-flex align-items-center gap-2">
+              <span className="mt-2">
+                <i class="ri-restaurant-2-line"></i>
+              </span>{" "}
+              <h2 id="typewriter">LA TABLE DU ROVA</h2>
             </div>
 
             <div className="nav__menu " ref={menuRef}>
@@ -92,13 +84,7 @@ const Header = () => {
         </Container>
       </header>
 
-      <HeroSlider />
-      <PopularMenu />
-      <ChoseUs />
-      <MenuPack />
-      <Conseil />
-      <Zebubar />
-      <Footer />
+     
     </>
   );
 };

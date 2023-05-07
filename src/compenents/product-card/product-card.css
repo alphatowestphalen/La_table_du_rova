@@ -3,13 +3,19 @@
   border-radius: 10px;
   cursor: pointer;
   transition: 0.4s;
-  animation: animate .6s ease-in;
+  text-align: center;
+  padding-top: 21px;
 }
 
 .single__product:hover {
   box-shadow: 7px 7px 15px -5px #000000;
   background: #191629;
 }
+.single__product .product_img img{
+  width: 50%;
+  border-radius: 20%;
+}
+
 
 .product__content {
   padding: 0px 20px;
@@ -37,12 +43,11 @@
   font-weight: 500;
 }
 
-
-@keyframes animate{
-  from{
+@keyframes animate {
+  from {
     transform: scale(0);
   }
-  to{
+  to {
     transform: scale();
   }
 }

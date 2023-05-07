@@ -1,6 +1,7 @@
 .app__container {
-  background: #f5b70a;
+  background: #f5b60a3b;
   border-radius: 10px;
+  padding: 20px;
 }
 
 .app__img {
@@ -13,6 +14,9 @@
 .app__content h2 {
   color: #0a071a;
   font-weight: 600;
+}
+.descriptionZebubar{
+  margin-left: 30px;
 }
 .app__content {
   padding-top: 50px;

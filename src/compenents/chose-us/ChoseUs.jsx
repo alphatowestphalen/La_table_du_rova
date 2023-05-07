@@ -28,7 +28,7 @@ const ChoseUs = () => {
                   <p>2 plats et</p>
                   <p>2 deserts,</p>
                   <p>
-                    Retrouver notre menu du jour <a href="facebook.com">ici</a>
+                    Retrouver notre menu du jour <a href="https://www.facebook.com/profile.php?id=100089913078909">ici</a>
                   </p>
                 </div>
 
@@ -55,7 +55,7 @@ const ChoseUs = () => {
                     <i class="ri-secure-payment-line"></i>
                   </span>
                   <h6>Payement securiser</h6>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Cette application n'est pas capable de faire payement en ligne</p>
                 </div>
 
                 <div className="single__feature droit">
@@ -63,7 +63,7 @@ const ChoseUs = () => {
                     <i class="ri-24-hours-line"></i>
                   </span>
                   <h6>Service Rapide et efficace</h6>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Nos service est compris entre 20 à 30 minutes</p>
                 </div>
               </div>
             </div>

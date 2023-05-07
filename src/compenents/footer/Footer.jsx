@@ -54,25 +54,28 @@ const Footer = () => {
                   LA TABLE DU ROVA
                 </h2>
                 <p>
-                  Lorem upsom is a toogle footer in the caniva where I need. but
-                  she is an another way to get a success in the develope
+                  Nous sommes une jeune équipe et vos avis et suggestions nous seront très utiles. <br />
+                  Vous pouvez nous les communiquer sur notre adresse e-mail : latabledurova@gmail.com
                 </p>
               </div>
             </Col>
             <Col mb="4" lg="2" sm="6">
-              <h5 className="footer__link-title">Quick links</h5>
+              <h5 className="footer__link-title">Ouverture</h5>
 
               <ListGroup>
-                {footerQuickLinks.map((item, index) => (
-                  <ListGroupItem key={index} className="link__item">
-                    <a href={item.url}>{item.display}</a>
+                
+                  <ListGroupItem className="link__item">
+                    <p>Jour d' ouverture: 7j/7j</p>
                   </ListGroupItem>
-                ))}
+
+                  <ListGroupItem className="link__item">
+                    <p>Heure d'ouverture: 09h-21h</p>
+                  </ListGroupItem>
               </ListGroup>
             </Col>
 
             <Col mb="4" lg="3" sm="6">
-              <h5 className="footer__link-title">Info links</h5>
+              <h5 className="footer__link-title">Info</h5>
 
               <ListGroup>
                 {footerLinks.map((item, index) => (
@@ -86,7 +89,11 @@ const Footer = () => {
               <h5 className="footer__link-title">Contact</h5>
               <ListGroup>
                 <ListGroupItem className="link__item d-flex align-items-center gap-3">
-                  <i class="ri-map-pin-line"></i> Rova Fianarantsoa
+                  <i class="ri-map-pin-line"></i> <a href="https://www.google.fr/maps/place/La+Table+du+Rova/@-21.4598125,47.0742322,17z/data=!3m1!4b1!4m6!3m5!1s0x21e7bf383e6d3761:0x861be45d60ba5ccb!8m2!3d-21.4598125!4d47.0768125!16s%2Fg%2F11txq42gx5">Rova Fianarantsoa</a> 
+                </ListGroupItem>
+
+                <ListGroupItem className="link__item d-flex align-items-center gap-3">
+                  <i class="ri-facebook-line"></i> <a href="https://www.facebook.com/profile.php?id=100089913078909"> facebook </a>
                 </ListGroupItem>
 
                 <ListGroupItem className="link__item d-flex align-items-center gap-3">
@@ -94,7 +101,11 @@ const Footer = () => {
                 </ListGroupItem>
 
                 <ListGroupItem className="link__item d-flex align-items-center gap-3">
-                  <i class="ri-phone-line"></i> +261 34 56 775 69
+                  <i class="ri-whatsapp-line"></i> <a href="https://www.facebook.com/profile.php?id=100089913078909"> +261 34 72 545 75 <br /> +261 34 50 165 45 </a>
+                </ListGroupItem>
+
+                <ListGroupItem className="link__item d-flex align-items-center gap-3">
+                  <i class="ri-phone-line"></i> +261 34 72 545 75 <br /> +261 34 50 165 45 
                 </ListGroupItem>
               </ListGroup>
             </Col>
@@ -105,7 +116,7 @@ const Footer = () => {
         <Container>
             <Row>
             <Col lg='12'>
-                <p>copyright Mai 2023, developed by Tech_Treka. All rights reserved</p>
+                <p>Cette site web est entraint de developement</p>
             </Col>
             </Row>
         </Container>

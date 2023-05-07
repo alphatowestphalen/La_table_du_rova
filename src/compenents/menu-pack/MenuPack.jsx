@@ -77,70 +77,147 @@ const MenuPack = () => {
         <Row>
           <Col lg="12" className="text-center mb-4">
             <h2 className="menu__title">Nos Grandes Tables</h2>
-            <h6 className="menu__title">
+            <h6 className="menu__title__childer">
               A partir de 6 personnes et uniquement sur réservation
             </h6>
-            <h6 className="menu__title">
+            <h6 className="menu__title__childer">
               Le choix de menu doit être déteriminé au plus tard 24h00 à
               l'avance
             </h6>
-            <br></br>
-            <h3 className="menu__title">
-              La tablée dégustation malagasy : 45.000 Ar
-            </h3>
-            <h6 className="menu__title">
-              Cocktail de bienvenue : avec ou sans alcool
-            </h6>
           </Col>
-          <Col lg="12" className="text-center mb-5">
-            <button
-              className={`filter-btn ${
-                filter === "FAST-FOOD" ? "active__btn" : ""
-              }`}
-              onClick={() => setFilter("FAST-FOOD")}
-            >
+        </Row>
+        <Row>
+          <Col lg="5" className="menu text-left mb-4">
+            <h3 className="menu__title">La table degistation malagasy : 45000</h3>
+            <h4 className="menu__title__childer">
+              Cocktail de bienvenue : avec ou sans alcool
+            </h4>
+            <h4 className="menu__title__childer_entre">
               Entrée au choix
-            </button>
-            <button
-              className={`filter-btn ${
-                filter === "RICE-MENU" ? "active__btn" : ""
-              }`}
-              onClick={() => setFilter("RICE-MENU")}
-            >
+            </h4>
+            <div className="liste_entre">
+              <ul>
+                <li>Assiette de sambos ou de nems maison sur lit de verdure.</li>
+                <li>Salade de crudités variées, œufs mayonnaises.</li>
+              </ul>
+            </div>
+            <h4 className="menu__title__childer_entre">
               Plat au choix
-            </button>
-            <button
-              className={`filter-btn ${
-                filter === "PIZZA" ? "active__btn" : ""
-              }`}
-              onClick={() => setFilter("PIZZA")}
-            >
+            </h4>
+            <div className="liste_plat">
+              <ul>
+                <li>Hen’omby ritra.</li>
+                <li>Ravitoto sy henakisoa.</li>
+                <li>Carri de poulet.</li>
+                <li>Akohosôsy sy petipoa.</li>
+                <li>Rougail de saucisses.</li>
+                <li>Gambas flambées au rhum.</li>
+              </ul>
+            </div>
+            <h4 className="menu__title__childer_entre">
               Accompagnement
-            </button>
-            <button
-              className={`filter-btn ${
-                filter === "DESSERT" ? "active__btn" : ""
-              }`}
-              onClick={() => setFilter("DESSERT")}
-            >
+            </h4>
+            <div className="liste_Accompagnement">
+              <ul>
+                <li> riz blanc et rougail de tomates.</li>
+              </ul>
+            </div>
+            <h4 className="menu__title__childer_entre">
               Dessert au choix
-            </button>
+            </h4>
+            <div className="liste_Accompagnement">
+              <ul>
+                <li> Coupe glacée de la reine Ranavalona.</li>
+                <li> Riz au lait de coco.</li>
+                <li> Gâteau de riz à la vanille.</li>
+                <li> Koba ravina de la table du Rova.</li>
+                <li> Salade de fruits de saison.</li>
+              </ul>
+            </div>
           </Col>
-          {products.map((item) => (
+
+          {/* bistronomique */}
+          <Col lg="5" className="menu text-left mb-4">
+            <h3 className="menu__title">La Tablée bistronomique  : 70.000 Ar</h3>
+            <h4 className="menu__title__childer">
+              Cocktail de bienvenue : <p>avec ou sans alcool et Croquants au fromage de Fianarantsoa.</p> 
+            </h4>
+            <h4 className="menu__title__childer_entre">
+              Entrée au choix
+            </h4>
+            <div className="liste_entre">
+              <ul>
+                <li>Crémeux de potiron aux écrevisses.</li>
+                <li>Bouchée de courgettes, sauce curry.</li>
+                <li>Salade composée selon l’humeur du Chef.</li>
+                <li>Quiche aux légumes de saison gratinés sur son lit de verdure.</li>
+                <li>Salade de crudités variées, œufs mayonnaises.</li>
+              </ul>
+            </div>
+            <h4 className="menu__title__childer_entre">
+              Plat au choix
+            </h4>
+            <div className="liste_plat">
+              <ul>
+                <li>Tournedos sauce marchand de vin.</li>
+                <li>Emincés de volaille en sauce safranée, citron et vin moelleux.</li>
+                <li>Filet mignon de porc au miel et zests d’orange</li>
+                <li>Carbonnade à la bière.</li>
+              </ul>
+            </div>
+            <h4 className="menu__title__childer_entre">
+              Accompagnement
+            </h4>
+            <div className="liste_Accompagnement">
+              <ul>
+                <li> Gratin dauphinois ou gratin de potirons et de pommes de terre.</li>
+                <li> Ratatouille niçoise ou légumes sautés de saison.</li>
+              </ul>
+            </div>
+            <h4 className="menu__title__childer_entre">
+              Dessert au choix
+            </h4>
+            <div className="liste_Accompagnement">
+              <ul>
+                <li> Moelleux au chocolat de Madagascar nappée de crème vanille de Madagascar.</li>
+                <li> Crumble aux fruits de saison.</li>
+                <li> Panna cotta aux fruits du marché.</li>
+                <li> Farandole de mignardises (+10.000 ar).</li>
+              </ul>
+            </div>
+          </Col>
+        </Row>
+        {/* <Col lg="12" className="degistationGobale">
+            <div className="degustation">
+              <h4 className="menu__title">
+                La tablée dégustation malagasy : 45.000 Ar
+              </h4>
+              <h6 className="menu__title__childer">
+                La tablée dégustation malagasy : 45.000 Ar
+              </h6>
+            </div>
+            <div className="degustation">
+              <h4 className="menu__title">
+              La tablée bistronomique : 70.000 Ar
+              </h4>
+              <h6 className="menu__title">
+              Cocktail de bienvenue : avec ou sans alcool et Croquants au fromage de Fianarantsoa
+              </h6>
+            </div>
+          </Col> */}
+        {/* {products.map((item) => (
             <Col
               lg="3"
-              md="4"
-              sm="6"
-              xs="6"
+
               key={item.id}
               className="d-flex align-item-center mb-4"
             >
               {" "}
               <ProductCard item={item} />
             </Col>
-          ))}
+          ))} */}
 
-          <Col lg="12" className="text-center mb-4">
+        {/* <Col lg="12" className="text-center mb-4">
             <h3 className="menu__title">La tablée bistronomique : 70.000 Ar</h3>
             <h6 className="menu__title">
               Cocktail de bienvenue : avec ou sans alcool et Croquants au
@@ -149,33 +226,29 @@ const MenuPack = () => {
           </Col>
           <Col lg="12" className="text-center mb-5">
             <button
-              className={`filter-btn ${
-                filter1 === "RICH-MEN" ? "active__btn" : ""
-              }`}
+              className={`filter-btn ${filter1 === "RICH-MEN" ? "active__btn" : ""
+                }`}
               onClick={() => setFilter1("RICH-MEN")}
             >
               Entrée au choix
             </button>
             <button
-              className={`filter-btn ${
-                filter1 === "ENTREE" ? "active__btn" : ""
-              }`}
+              className={`filter-btn ${filter1 === "ENTREE" ? "active__btn" : ""
+                }`}
               onClick={() => setFilter1("ENTREE")}
             >
               Plat au choix
             </button>
             <button
-              className={`filter-btn ${
-                filter1 === "PIZZAT" ? "active__btn" : ""
-              }`}
+              className={`filter-btn ${filter1 === "PIZZAT" ? "active__btn" : ""
+                }`}
               onClick={() => setFilter1("PIZZAT")}
             >
               Accompagnement
             </button>
             <button
-              className={`filter-btn ${
-                filter1 === "DESSER" ? "active__btn" : ""
-              }`}
+              className={`filter-btn ${filter1 === "DESSER" ? "active__btn" : ""
+                }`}
               onClick={() => setFilter1("DESSER")}
             >
               Dessert au choix
@@ -193,17 +266,15 @@ const MenuPack = () => {
           </Col>
           <Col lg="12" className="text-center mb-5">
             <button
-              className={`filter-btn ${
-                filter2 === "RICH-ME" ? "active__btn" : ""
-              }`}
+              className={`filter-btn ${filter2 === "RICH-ME" ? "active__btn" : ""
+                }`}
               onClick={() => setFilter2("RICH-ME")}
             >
               Nos Vins Malagasy
             </button>
             <button
-              className={`filter-btn ${
-                filter2 === "ENTRE" ? "active__btn" : ""
-              }`}
+              className={`filter-btn ${filter2 === "ENTRE" ? "active__btn" : ""
+                }`}
               onClick={() => setFilter2("ENTRE")}
             >
               Vin au verre ou en pichet
@@ -214,8 +285,8 @@ const MenuPack = () => {
               {" "}
               <ProductCard item={item} />
             </Col>
-          ))}
-        </Row>
+          ))} */}
+          
       </Container>
     </section>
   );

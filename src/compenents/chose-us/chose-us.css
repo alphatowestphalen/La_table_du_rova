@@ -7,18 +7,47 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
+  
 }
-
 .gauche {
   width: 300%;
+  align-items: center;
+  background: #141124;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 46px;
+  margin: 12px;
 }
 .droit {
   width: 300%;
+  align-items: center;
+  background: #141124;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  text-align: center;
+  padding: 21px;
+  margin: 12px;
+}
+.gauche:hover,.droit:hover {
+  box-shadow: 0px 0px 35px 9px rgb(66 78 55 / 30%);
+  width: 310%;
+  transition: 0.5s;
 }
 .single__feature span i {
   font-size: 1.5rem;
 }
-
+.single__feature span {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ff7660;
+  display: flex;
+  margin: 18px auto;
+}
 .test {
   display: flex;
   gap: 40px;

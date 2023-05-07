@@ -3,6 +3,8 @@ import { Container, Row, Col } from "reactstrap";
 import "./conseil.css";
 import conseilImg from "../../assets/images/review1.png";
 import Slider from "react-slick";
+import bg from "../../assets/images/imageTabledurova/1.jpg";
+import { Imgtabledurova } from "../../assets/fake-data/imgtabledurova";
 
 const Conseil = () => {
   const settings = {
@@ -21,50 +23,14 @@ const Conseil = () => {
             <div className="slider__wrapper d-flex align-items-center gap-5">
               <div className="slider__content w-50">
                 <h2 className="mb-4">
-                  des employers talentueux, a l'ecoute et competant
+                  Quelque photo dans nos restaurant table du rova
                 </h2>
                 <Slider {...settings}>
-                  <div>
-                    <div className="single__testimonial">
-                      <p className="review__content">
-                        "Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Quasi hic nihil voluptas modi corporis? Neque
-                        accusantium a, quas eos nam aliquid, inventore labore
-                        doloremque voluptatem blanditiis deleniti culpa error
-                        odio."
-                      </p>
-                      <h6>Michel Princy</h6>
-                      <p>Web Developer</p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <div className="single__testimonial">
-                      <p className="review__content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quasi hic nihil voluptas modi corporis? Neque
-                        accusantium a, quas eos nam aliquid, inventore labore
-                        doloremque voluptatem blanditiis deleniti culpa error
-                        odio.
-                      </p>
-                      <h6>Michel Princy</h6>
-                      <p>Web Developer</p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <div className="single__testimonial">
-                      <p className="review__content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quasi hic nihil voluptas modi corporis? Neque
-                        accusantium a, quas eos nam aliquid, inventore labore
-                        doloremque voluptatem blanditiis deleniti culpa error
-                        odio.
-                      </p>
-                      <h6>Michel Princy</h6>
-                      <p>Web Developer</p>
-                    </div>
-                  </div>
+                  {
+                    Imgtabledurova.map((items) => (
+                        <img src={items.urlImage} className="w-100" />
+                    ))
+                  }
                 </Slider>
               </div>
               <div className="slider__img w-50">
