@@ -1,8 +1,8 @@
 // ======= imported  all products images from images folder ========
 import pizzaImg01 from "../images/leo.png";
 
-import fastFood03 from "../images/nana.png";
-import fastFood04 from "../images/flo.png";
+import fastFood03 from "../images/nana.jpg";
+import fastFood04 from "../images/flo.jpg";
 
 import dessert02 from "../images/dessert02.png";
 import dessert03 from "../images/dessert2.png";
