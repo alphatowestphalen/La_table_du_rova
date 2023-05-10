@@ -28,7 +28,7 @@ export const popularMenuFood = [
 
   {
     id: "04",
-    title: "LEONE",
+    title: "LEONCE",
     role: "Commis cuisine",
     imgUrl: pizzaImg01,
   },

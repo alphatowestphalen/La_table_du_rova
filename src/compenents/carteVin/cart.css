@@ -1,0 +1,64 @@
+.filter-btn {
+  border: 1px solid #f76e11;
+  padding: 7px 25px;
+  background: transparent;
+  margin-left: 15px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ml-5 {
+  margin-left: 5px;
+}
+.degistationGobale {
+  display: flex;
+  justify-content: space-evenly;
+}
+.degistationGobale .degustation{
+  background: #141124;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 13px 18px;
+  margin-bottom: 18px;
+
+}
+.menu__title__childer_entre{
+  color: #f5b70a;
+
+}
+.menu__title {
+  color: #f5b70a;
+  font-size: 22px;
+}
+.menu{
+  background-color: #141124;
+  border-radius: 15px;
+  margin: 0 40px 0 0;
+  padding: 40px 20px 20px 20px;
+}
+.menu__title__childer{
+  color: rgb(229, 234, 238);
+  margin-bottom: 37px;
+}
+.bg-danger {
+  padding-top: 12px;
+  margin-left: 12px;
+  width: 48%;
+}
+.row {
+  justify-content: center;
+
+}
+.active__btn {
+  background: #f76e11;
+}
+
+@media only screen and(max-width:992px) {
+  .menu__title {
+    font-size: 1.4rem;
+  }
+  .filter-btn {
+    padding: 5px 20px;
+    font-size: 0.8rem;
+  }
+}

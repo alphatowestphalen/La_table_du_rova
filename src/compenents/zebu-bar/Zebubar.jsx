@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./zebubar.css";
 import { Container, Row, Col } from "reactstrap";
 import Slider from "react-slick";
 import { Zebubardata } from "../../assets/fake-data/zebubar";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Zebubar = () => {
   const settings = {
     infinite: true,
@@ -14,8 +15,16 @@ const Zebubar = () => {
     autoplaySpeed: 3000,
 
   };
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // durée de l'animation en millisecondes
+      offset: 100, // décalage (en pixels) de l'élément avant l'animation
+      easing: 'ease-in-out', // type de transition de l'animation
+      delay: 200, // délai (en millisecondes) avant que l'animation ne démarre
+    });
+  }, []);
   return (
-    <section>
+    <section data-aos="zoom-in-down">
       <Container className="app__container">
         <Row className="gap-6">
           <Col lg="6">
@@ -30,19 +39,20 @@ const Zebubar = () => {
           <Col lg="6" md="8">
 
             <div className="app__content">
-              <h2>Decouvrire aussi Zebubar Ambalavao</h2>
-              <h1 className="mb-4">
-                Hotel et Restaurant
-              </h1>
               <p className="descriptionZebubar">
-               Cette hotel est situé Ambalavao, si vous avez besoin d'inforamtion Cliquer sur contracter ou appele ce numero
-               <br /> 
+               Notre partenaire à Ambalavao :
+               <br />
+               Le Zébubar
+               <br />
+               Restaurant et chambres d'hôtes
+               <br />
+               Pour toute information contacter le
+               <br />
                +261 34 50 165 45
               </p>
               <div className="app__btns d-flex align-item-center gap-5 mt-4">
                 <button className="btn__apple d-flex align-item-center gap-3">
-                  <i class="ri-apple-line"></i>
-                  <a href="https://www.facebook.com/zebubarambalavao">Decouvrire</a>
+                  <a href="https://www.facebook.com/zebubarambalavao">Decouvrir</a>
                 </button>
               </div>
             </div>

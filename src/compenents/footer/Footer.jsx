@@ -54,8 +54,8 @@ const Footer = () => {
                   LA TABLE DU ROVA
                 </h2>
                 <p>
-                  Nous sommes une jeune équipe et vos avis et suggestions nous seront très utiles. <br />
-                  Vous pouvez nous les communiquer sur notre adresse e-mail : latabledurova@gmail.com
+                  Nous sommes une jeune équipe motivée et ouverte à tous critiques instructifs pouvant nous aider à évoluer . <br />
+                  Vous pouvez nous les communiquer sur notre adresse e-mail.
                 </p>
               </div>
             </Col>
@@ -65,7 +65,7 @@ const Footer = () => {
               <ListGroup>
                 
                   <ListGroupItem className="link__item">
-                    <p>Jour d' ouverture: 7j/7j</p>
+                    <p>Jours d'ouverture: 7j/7j</p>
                   </ListGroupItem>
 
                   <ListGroupItem className="link__item">
@@ -93,7 +93,7 @@ const Footer = () => {
                 </ListGroupItem>
 
                 <ListGroupItem className="link__item d-flex align-items-center gap-3">
-                  <i class="ri-facebook-line"></i> <a href="https://www.facebook.com/profile.php?id=100089913078909"> facebook </a>
+                  <i class="ri-facebook-line"></i> <a href="https://www.facebook.com/profile.php?id=100089913078909"> La Table du Rova </a>
                 </ListGroupItem>
 
                 <ListGroupItem className="link__item d-flex align-items-center gap-3">
@@ -101,11 +101,11 @@ const Footer = () => {
                 </ListGroupItem>
 
                 <ListGroupItem className="link__item d-flex align-items-center gap-3">
-                  <i class="ri-whatsapp-line"></i> <a href="https://www.facebook.com/profile.php?id=100089913078909"> +261 34 72 545 75 <br /> +261 34 50 165 45 </a>
+                  <i class="ri-whatsapp-line"></i> <a href="https://www.facebook.com/profile.php?id=100089913078909"> +261 34 72 545 75</a>
                 </ListGroupItem>
 
                 <ListGroupItem className="link__item d-flex align-items-center gap-3">
-                  <i class="ri-phone-line"></i> +261 34 72 545 75 <br /> +261 34 50 165 45 
+                  <i class="ri-phone-line"></i> +261 34 72 545 75
                 </ListGroupItem>
               </ListGroup>
             </Col>
@@ -116,7 +116,7 @@ const Footer = () => {
         <Container>
             <Row>
             <Col lg='12'>
-                <p>Cette site web est entraint de developement</p>
+                <p>Ce site web est en cours de developement...  copyright Tech_Treka 2023 </p>
             </Col>
             </Row>
         </Container>

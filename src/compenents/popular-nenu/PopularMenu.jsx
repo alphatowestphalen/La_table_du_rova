@@ -7,6 +7,8 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -30,16 +32,20 @@ const Employer = () => {
     );
   };
   useEffect(() => {
-    slideToTop("#box1");
+    AOS.init({
+      duration: 800, // durée de l'animation en millisecondes
+      offset: 100, // décalage (en pixels) de l'élément avant l'animation
+      easing: 'ease-in-out', // type de transition de l'animation
+      delay: 200, // délai (en millisecondes) avant que l'animation ne démarre
+    });
   }, []);
 
   return (
-    <section className="pt-0">
+    <section data-aos="zoom-in-down" className="pt-0">
       <Container>
         <Row>
-          <Col lg="12" className="mb-5 text-center mt-2">
-            <br></br>
-            <h2>Liste des employés</h2>
+          <Col lg="12" className="mb-5 text-center mt-5">
+            <h2>Notre équipe</h2>
           </Col>
 
           {popularMenuFood.map((item) => (

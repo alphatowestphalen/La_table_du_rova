@@ -13,7 +13,9 @@
   background: linear-gradient(180deg, #0a071a, #0a071afb);
 }
 
+
 .navigation {
+  width: 106%;
   display: flex;
   align-items: center;
   justify-content: space-between;

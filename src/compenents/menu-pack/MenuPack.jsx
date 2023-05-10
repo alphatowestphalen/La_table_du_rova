@@ -21,6 +21,8 @@ import {
 
 import "./menu-pack.css";
 import ProductCard from "../product-card/ProductCard";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const MenuPack = () => {
   const [filter, setFilter] = useState("RICE-MENU");
@@ -61,6 +63,14 @@ const MenuPack = () => {
       setProducts1(pizzaProducts1);
     }
   }, [filter1]);
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // durée de l'animation en millisecondes
+      offset: 100, // décalage (en pixels) de l'élément avant l'animation
+      easing: 'ease-in-out', // type de transition de l'animation
+      delay: 200, // délai (en millisecondes) avant que l'animation ne démarre
+    });
+  }, []);
 
   useEffect(() => {
     if (filter2 === "RICH-ME") {
@@ -76,7 +86,7 @@ const MenuPack = () => {
       <Container>
         <Row>
           <Col lg="12" className="text-center mb-4">
-            <h2 className="menu__title">Nos Grandes Tables</h2>
+            <h2 className="menu__title">Nos Grandes Tablées</h2>
             <h6 className="menu__title__childer">
               A partir de 6 personnes et uniquement sur réservation
             </h6>
@@ -87,8 +97,8 @@ const MenuPack = () => {
           </Col>
         </Row>
         <Row>
-          <Col lg="5" className="menu text-left mb-4">
-            <h3 className="menu__title">La table degistation malagasy : 45000</h3>
+          <Col data-aos="zoom-in-right" lg="5" className="menu text-left mb-4">
+            <h3 className="menu__title">La Tablée degustation malagasy : 45000 Ar</h3>
             <h4 className="menu__title__childer">
               Cocktail de bienvenue : avec ou sans alcool
             </h4>
@@ -137,10 +147,10 @@ const MenuPack = () => {
           </Col>
 
           {/* bistronomique */}
-          <Col lg="5" className="menu text-left mb-4">
+          <Col data-aos="zoom-in-right" lg="5" className="menu text-left mb-4">
             <h3 className="menu__title">La Tablée bistronomique  : 70.000 Ar</h3>
             <h4 className="menu__title__childer">
-              Cocktail de bienvenue : <p>avec ou sans alcool et Croquants au fromage de Fianarantsoa.</p> 
+              Cocktail de bienvenue : <p>avec ou sans alcool et Croquants au fromage de Fianarantsoa.</p>
             </h4>
             <h4 className="menu__title__childer_entre">
               Entrée au choix
@@ -286,7 +296,7 @@ const MenuPack = () => {
               <ProductCard item={item} />
             </Col>
           ))} */}
-          
+
       </Container>
     </section>
   );

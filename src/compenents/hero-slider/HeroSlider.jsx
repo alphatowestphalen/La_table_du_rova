@@ -50,7 +50,7 @@ const HeroSlider = () => {
                 <div className="slider__content w-100 ps-2">
                   <h2 className="mb-3">{item.title}</h2>
                   <h3>{item.desc}</h3>
-                  <p>{item.descn}</p>
+                  <p>{item.descn}{item.urlfb}</p>
                 </div>
               </div>
             </div>

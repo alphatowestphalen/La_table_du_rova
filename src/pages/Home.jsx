@@ -8,20 +8,15 @@ import Conseil from "../compenents/conseil/Conseil";
 import Zebubar from "../compenents/zebu-bar/Zebubar";
 import Footer from "../compenents/footer/Footer";
 import PopularMenu from "../compenents/popular-nenu/PopularMenu";
+import { Route, Routes } from "react-router-dom";
 
 
 
 const Home = () => {
   return (
-    <Fragment>
+    <Fragment >
       <Header />
-      <HeroSlider />
-      <PopularMenu />
-      <ChoseUs />
-      <MenuPack />
-      <Conseil />
-      <Zebubar />
-      <Footer />
+      
     </Fragment>
   );
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext } from "react";
 import ReactDOM from "react-dom";
 
 import "bootstrap/dist/css/bootstrap.css";
@@ -8,11 +8,15 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 
-import App from "./App";
 
-ReactDOM.render(
-  <React.StrictMode>
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import { render } from "@testing-library/react";
+
+
+render(
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+  </BrowserRouter>,
+  document.getElementById('root')
+)
